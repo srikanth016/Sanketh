@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sanketh User Dashboard</title>
+    <link rel="stylesheet" href="userdashboard.css">
+</head>
+<script type="module" src="profile.js"></script>
+<script type="module" src="sos.js"></script>
+<script type="module" src="livestatus.js"></script>
+<script type="module" src="sosdetails.js"></script>
+<div class="popup" id="sosPopup">
+
+<div class="popup-content">
+
+<h2>Emergency Details</h2>
+
+<select id="detailsEmergencyType">
+
+<option>Flood</option>
+<option>Fire</option>
+<option>Medical</option>
+<option>Accident</option>
+<option>Earthquake</option>
+
+</select>
+
+<textarea
+id="note"
+placeholder="Short Description (Optional)">
+</textarea>
+
+<button id="sendDetailsBtn">
+SEND DETAILS
+</button>
+
+</div>
+
+</div>
+<body>
+
+    <div class="main" id="home">
+
+        <div class="navbar">
+
+            <div class="icon">
+                <h2 class="logo">Sanketh</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#alerts">ALERTS</a></li>
+                    <li><a href="#agencies">AGENCIES</a></li>
+                    <li><a href="#profileBox" id="profileNav">PROFILE</a></li>
+                    <li><a href="#" id="logoutNav">LOGOUT</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="content">
+
+            <div class="profile-card">
+
+                <img src="user.png" class="profile-img">
+
+                <h2 id="username">Abhishek</h2>
+
+                <p>Age : 21</p>
+
+                <p>Gender : Male</p>
+
+            </div>
+
+            <div class="welcome">
+
+                <h1>Emergency Response Dashboard</h1>
+
+                <p class="par">
+                    Stay connected with rescue agencies and send emergency alerts instantly.
+                </p>
+
+            </div>
+
+            <div class="top-section">
+
+                <div class="sos-box">
+
+                    <h2>Emergency SOS</h2>
+
+                    <select id="sosEmergencyType">
+
+                        <option>Flood</option>
+                        <option>Fire</option>
+                        <option>Medical</option>
+                        <option>Earthquake</option>
+                        <option>Accident</option>
+
+                    </select>
+
+                    <button class="sos-btn" id="sosBtn">
+                        🚨 SEND SOS
+                    </button>
+
+                </div>
+
+                <div class="status-box">
+
+                    <h2>Live Rescue Status</h2>
+
+                    <p id="liveStatus">
+                        🟡 Waiting For Response
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="cards">
+
+                <div class="card" id="agencies">
+
+                    <h2>Nearby Rescue Agencies</h2>
+
+                    <p>🚒 Fire Rescue Team - 2km</p>
+                    <p>🚑 Medical Team - 5km</p>
+                    <p>🌊 Flood Rescue Unit - Active</p>
+
+                </div>
+
+                <div class="card" id="alerts">
+
+                    <h2>Disaster Alerts</h2>
+
+                    <p>⚠ Heavy Rain Alert</p>
+                    <p>⚠ Flood Warning</p>
+                    <p>⚠ Traffic Blocked</p>
+
+                </div>
+
+                <div class="card">
+
+                    <h2>Emergency Contacts</h2>
+
+                    <p>Police : 100</p>
+                    <p>Ambulance : 108</p>
+                    <p>Fire : 101</p>
+
+                </div>
+
+                <div class="card">
+
+                    <h2>Current Location</h2>
+
+                    <p>📍 Hyderabad, Telangana</p>
+
+                </div>
+
+                <div class="card">
+
+                    <h2>Recent SOS History</h2>
+
+                    <p>12:30 PM - Flood Alert Sent</p>
+                    <p>02:10 PM - Medical Emergency</p>
+
+                </div>
+
+                <div class="card">
+
+                    <h2>Safety Instructions</h2>
+
+                    <p>⚠ Move to higher ground during floods.</p>
+                    <p>⚠ Keep emergency kit ready.</p>
+
+                </div>
+
+            </div>
+
+            <div class="profile-warning" id="profileBox">
+                <h2>⚠ Complete Your Emergency Profile</h2>
+                <div class="profile-form">
+                    <input type="text" id="name" placeholder="Full Name">
+                    <input type="number" id="age" placeholder="Age">
+                    <select id="gender">
+                        <option value="">Select Gender</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                    </select>
+                    <input type="text" id="bloodGroup" placeholder="Blood Group">
+
+                    <input type="text" id="mobile" placeholder="Mobile Number">
+
+                    <input type="text" id="emergencyContact" placeholder="Emergency Contact">
+
+                    <input type="text" id="address" placeholder="Address">
+                    <input type="text" id="medical" placeholder="Medical Conditions (Optional)">
+                    <input type="file" id="photo">
+                    <button id="saveProfileBtn">SAVE PROFILE</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

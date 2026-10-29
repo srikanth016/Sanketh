@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stg.css">
+    <script src="stg.js"></script>
+</head>
+<body>
+    <button class="button" href="#" onclick="show('popup')">Button</button>
+
+<!-- This is what will be included inside the popup -->
+<div class="popup" id="popup">
+  <p>This is a popup!</p>
+  <p>Overlay uses <b>:before</b> and <b>:after</b> pseudo-classes.</p>
+  <p>Website will still remain visible behind this popup.</p>
+  <a href="#" onclick="hide('popup')">Close</a>
+</div>
+
+
+
+</body>
+</html>

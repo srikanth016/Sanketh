@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styform.css">
+    <script src="stg.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">Sanketh</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="display2.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICE</a></li>
+                    
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+
+           
+
+        </div> 
+        <div class="content">
+            
+
+                <div class="form">
+                    <form method="post" action="https://script.google.com/macros/s/AKfycbw_0s4VHZr55VnoeWskgwxtv0ig8Dk5N_bhql0HAQk3NVwbJMGjOhx9pyRMa9TdrkT_6A/exec">
+                    <h2>DISCRIBE ISSUE</h2>
+                    <input type="email" name="email" placeholder="Enter Email Here">
+                    <input type="name" name="name" placeholder="Name">
+                    <input type="number" name="number" placeholder="Enter Mobile Number">
+                    <input type="issue" name="issue" placeholder="Enter Issue">
+                    <input type="brief" rows="3" name="brief" placeholder="Explain about issue in brief">
+                    <input type="location" name="location" placeholder="Enter Location">
+                    <input type="time p" name="time_p" placeholder="Time of Incident ">
+                    <label for="file">upload picture</label>
+                    <input type="file" name="file" placeholder="upload photos">
+                    <button class="btnn" href="#" onclick="show('popup')">SUBMIT</button>
+
+                    <!-- This is what will be included inside the popup -->
+                    <div class="popup" id="popup">
+                      <p>This is a popup!</p>
+                      <p>Form submitted Succesfully</p>
+                      <p>You will be contacted soon.</p>
+                      <p>Thank You</p>
+                      <a href="#" onclick="hide('popup')">Close</a>
+                    </div>
+                    </form>
+
+                    <p class="link">For more quires<br>
+                    <a href="contact.html">click</a> here</a></p>
+                    
+
+                   
+
+                </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>

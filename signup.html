@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stysign.css">
+    
+</head>
+<script type="module" src="signup.js"></script>
+<body>
+    
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">Sanketh</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="display2.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICE</a></li>
+                    
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+
+           
+
+        </div> 
+        <div class="content">
+            
+
+                <div class="form">
+                    <h2>SIGN UP HERE</h2>
+                    <input type="email" id="email" placeholder="Enter Email Here">
+                    <input type="password" id="password" placeholder="Enter Password">
+                    <input type="password" id="confirmPassword" placeholder="Re-enter Password">
+                    <input type="text" id="name" placeholder="Name">
+                    <input type="number" id="mobile" placeholder="Enter Mobile Number">
+                    <input type="text" id="aadhar" placeholder="Aadhar Number">
+                    <input type="text" id="address" placeholder="Enter Address">
+                    <input type="date" id="dob">
+                    <select id="role">
+                        <option value="user">User</option>
+                        <option value="agency">Agency</option>
+                        <option value="admin">Admin</option>
+                    </select>
+                    <button class="btnn" id="signupBtn">SUBMIT</button>
+
+                    <!-- This is what will be included inside the popup -->
+                    <div class="popup" id="popup">
+                      <p>This is a popup!</p>
+                      <p>Registration Sucessfull</p>
+                      <p>Please Login With Your Credentials.</p>
+                      <p>Thank You</p>
+                      <a href="#" onclick="hide('popup')">Close</a>
+                    </div>
+                    
+
+                    <p class="link">For more quires<br>
+                    <a href="contact.html">click</a> here</a></p>
+                    
+
+                   
+
+                </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>
